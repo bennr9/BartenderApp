@@ -11,7 +11,6 @@ namespace BartenderApp.Models
         public int DrinkID { get; set; }
         public string DrinkName { get; set; }
         public int Quantity { get; set; }
-        public int Queue { get; set; }
     }
 
     public class DrinkDBContext : DbContext

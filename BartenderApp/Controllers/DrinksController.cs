@@ -46,7 +46,7 @@ namespace BartenderApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "DrinkID,DrinkName,Quantity,CustomerName,Queue")] Drink drink)
+        public ActionResult Create([Bind(Include = "ID,DrinkName,Quantity")] Drink drink)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace BartenderApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "DrinkID,DrinkName,Quantity,CustomerName,Queue")] Drink drink)
+        public ActionResult Edit([Bind(Include = "ID,DrinkName,Quantity")] Drink drink)
         {
             if (ModelState.IsValid)
             {
